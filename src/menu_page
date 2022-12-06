@@ -1,0 +1,17 @@
+const renderMenuPage = () => {
+    const main = document.getElementById("main");
+    while (main.firstChild){
+        main.removeChild(main.firstChild);
+    }
+
+    //menu page - just a learning project, so gonna get real lazy here...
+    main.innerHTML = '\n            <div id="menu">\n            <div class="menu-item">\n                <img id="long-black" src="../src/longblack.png" alt="Picture of a cup of coffee">\n                <div class="description">Long Black 400円</div>\n            </div>\n            <div class="menu-item">\n                <img id="latte" src="../src/latte.png" alt="Picture of a foamy latte">\n                <div class="description">Oats Milk Latte 500円 </div>\n            </div>\n            </div>\n        ';
+    const longBlackPicture = document.getElementbyId("long-black");
+    longBlackPicture.src = "longblack.png";
+    const latte = document.getElementbyId("latte");
+    latte.src = "latte.png";
+    
+
+}
+
+export {renderMenuPage};

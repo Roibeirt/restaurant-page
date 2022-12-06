@@ -1,0 +1,11 @@
+const renderAboutPage = () => {
+    const main = document.getElementById("main");
+    while (main.firstChild){
+        main.removeChild(main.firstChild);
+    }
+
+    main.innerHTML = `\n            <div id="about">\n            <div id="location">\n                <h2>\n                    Trek out to our physical location:\n                </h2><h2>\n                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d381.48322381446303!2d138.13336505695443!3d36.93272444760099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sjp!4v1670316561830!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>\n            </h2></div>\n            <div id="contact">\n                <h2>Or contact us</h2>\n                <div>Email: <a href="https://github.com/Roibeirt">https://github.com/Roibeirt</a> <br> Phone: <a href="https://github.com/Roibeirt">https://github.com/Roibeirt</a> </div>\n            </div>\n            <div id="about-us">\n                <h2>About Us</h2>\n                <p>This is just a silly little project to practice webkit. <br> While Myoko is a beautiful area to go hiking, don't expect a coffee when you get there.</p>\n            </div>\n        </div>\n        `
+
+}
+
+export {renderAboutPage};
